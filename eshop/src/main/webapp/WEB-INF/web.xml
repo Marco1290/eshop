@@ -1,0 +1,61 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>HomePageServlet</servlet-name>
+        <servlet-class>ch.eshop.HomePageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomePageServlet</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>ch.eshop.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BagServlet</servlet-name>
+        <servlet-class>ch.eshop.BagServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BagServlet</servlet-name>
+        <url-pattern>/bags</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>ch.eshop.ProductsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-class>ch.eshop.PaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentServlet</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+
+    <!--
+    <error-page>
+        <location>/WEB-INF/error.jsp</location>
+    </error-page>
+    -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/error404.jsp</location>
+    </error-page>
+</web-app>

@@ -1,0 +1,34 @@
+#homepage{
+    height: 85vh;
+}
+
+.btn{
+    font-size: 1.5rem!important;
+}
+
+.h-bar{
+    height: 5px;
+    background-color: black;
+}
+.img_home{
+    background-size: cover;
+    background-position: center;
+}
+.img_prod{
+    width: 100% !important;
+    height: 30vh !important;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+a:hover
+{
+    color:white !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
+}
